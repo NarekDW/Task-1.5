@@ -7,7 +7,7 @@ class Matrix {
     private int size;
     private int[][] matrix;
 
-    void set(int size){
+    void setSize(int size){
         if(size>0){
             this.size=size;
         } else this.size=0;

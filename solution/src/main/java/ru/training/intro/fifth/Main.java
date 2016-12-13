@@ -6,7 +6,7 @@ package ru.training.intro.fifth;
 public class Main {
     public static void main(String[] args){
         Matrix matrix = new Matrix();
-        matrix.set(11);
+        matrix.setSize(11);
         int[][] getMatrix = matrix.initialization();
         print(getMatrix);
     }

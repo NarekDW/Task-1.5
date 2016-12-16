@@ -1,12 +1,14 @@
 package ru.training.intro.fifth;
 
+import java.util.Scanner;
 /**
  * Created by Narek on 13.12.2016.
  */
 public class Main {
     public static void main(String[] args){
         Matrix matrix = new Matrix();
-        matrix.setSize(11);
+        int size = getSize();
+        matrix.setSize(size);
         int[][] getMatrix = matrix.initialization();
         print(getMatrix);
     }
@@ -19,5 +21,12 @@ public class Main {
             }
             System.out.println();
         }
+    }
+
+    private static int getSize(){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Задайте размер матрицы");
+        int s = scan.nextInt();
+        return s;
     }
 }
